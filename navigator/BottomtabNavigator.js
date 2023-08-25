@@ -5,6 +5,7 @@ import AnnouncementScreen from "../pages/AnnouncementScreen";
 import CommunityScreen from "../pages/CommunityScreen";
 import SellerScreen from "../pages/SellerScreen";
 import FavoriteScreen from "../pages/FavoritesScreen";
+
 const Tab = createBottomTabNavigator();
 
 export default function BottomTabNavigator() {
@@ -13,14 +14,14 @@ export default function BottomTabNavigator() {
       style={{
         width: "100%",
         height: "100%",
-        backgroundColor: "#bcbcbc",
+        backgroundColor: "#4893EB",
       }}
     >
       <Tab.Navigator
         initialRouteName="StartScreen"
         screenOptions={() => ({
           tabBarStyle: {
-            backgroundColor: "#bcbcbc",
+            backgroundColor: "#BBD4FC",
             height: 60,
             width: "100%",
           },
@@ -35,7 +36,7 @@ export default function BottomTabNavigator() {
             tabBarLabelStyle: {
               fontSize: 12,
               color: "#FFFFFF",
-              top: -30,
+              top: -10,
             },
             tabBarIcon: () => (
               <Image
@@ -60,7 +61,7 @@ export default function BottomTabNavigator() {
             tabBarLabelStyle: {
               fontSize: 12,
               color: "#FFFFFF",
-              top: -30,
+              top: -10,
             },
             tabBarIcon: () => (
               <Image
@@ -81,11 +82,11 @@ export default function BottomTabNavigator() {
           component={AnnouncementScreen}
           options={{
             headerShown: false,
-            tabBarLabel: "새소식",
+            tabBarLabel: "마이페이지",
             tabBarLabelStyle: {
               fontSize: 12,
               color: "#FFFFFF",
-              top: -30,
+              top: -10,
             },
             tabBarIcon: ({ focused }) => (
               <Image
@@ -110,7 +111,7 @@ export default function BottomTabNavigator() {
             tabBarLabelStyle: {
               fontSize: 12,
               color: "#FFFFFF",
-              top: -30,
+              top: -10,
             },
             tabBarIcon: ({ focused }) => (
               <Image
